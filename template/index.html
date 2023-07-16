@@ -4,24 +4,18 @@
 <head>
     <title>Web Crawler</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" type="text/css" href="/static/styles.css">
 </head>
 
 <body>
     <div class="container">
         <h1>Web Crawler</h1>
         <form action="{{ url_for('get_data') }}" method="POST" class="form-group">
-            <label for="medicine_name">Enter Medicine Name:</label>
-            <input type="text" id="medicine_name" name="medicine_name" required>
+            <!-- <label for="medicine_name">Enter Medicine Name:</label> -->
+            <input type="text" id="medicine_name" name="medicine_name" placeholder="Enter Medicine Name" required>
             <button type="submit" class="btn">Get Data</button>
         </form>
     </div>
 </body>
 
 </html>
-
-
-
-
-
-
-
